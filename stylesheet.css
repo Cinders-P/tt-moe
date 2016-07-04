@@ -1,0 +1,217 @@
+@keyframes blink {
+    0% {
+        background-color: rgb(244, 160, 189);
+    }
+    50% {
+        background-color: rgb(252, 237, 133);
+    }
+    100% {
+        background-color: rgb(244, 160, 189);
+    }
+}
+
+.blink {
+    animation: blink 0.2s 5;
+}
+
+body {
+    cursor: url("http://downloads.totallyfreecursors.com/cursor_files/sparklepink.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/sparklepink.gif"), auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Quicksand;
+    color: rgb(244, 160, 189);
+}
+
+.overflow-hidden {
+    overflow: visible;
+    position: relative;
+}
+
+img {
+    height: 95vh;
+    margin-right: auto;
+    min-height: 400px;
+    margin-top: 1vw;
+}
+
+.row-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.board {
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 300px;
+    width: 45vw;
+    max-width: 700px;
+    min-height: 300px;
+    height: 45vw;
+    max-height: 700px;
+    margin-right: 3vw;
+    margin-bottom: 20px;
+}
+
+.board div {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(244, 160, 189);
+    margin: 1.5%;
+    font-family: arial;
+    overflow: hidden;
+}
+
+.board div p {
+    color: white;
+    font-size: 19vw;
+    transform: translateY(-4.3%);
+}
+
+#speech {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    font-size: 3vh;
+    text-shadow: 0 0 10px pink, 0 0 10px pink;
+    width: 14vw;
+    min-width: 200px;
+    min-width: 100px;
+    color: PaleVioletRed;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn-group-lg {
+    box-shadow: 0 0 10px 5px pink;
+    margin-left: 20px;
+    transition: box-shadow 0.2s ease-out;
+}
+
+.btn-group-lg> .btn {
+    font-size: 6vh;
+    border-radius: 0;
+    padding-bottom: 20px;
+    line-height: 0.5em;
+    color: rgb(244, 160, 189);
+    outline: 0;
+    border: 0;
+}
+
+.btn-group-lg> .btn:active,
+.btn-group-lg> .btn:focus {
+    outline: 0;
+    color: rgb(244, 160, 189);
+    background-color: inherit;
+}
+
+.btn {
+    cursor: inherit;
+    height: 5vw;
+    min-height: 50px;
+    width: 5vw;
+    min-width: 80px;
+    font-weight: 700;
+    outline: 0 !important;
+    transition: background-color 0.1s;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+#reset {
+    width: 10vw;
+    min-width: 160px;
+    margin-left: 20px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 6vh;
+}
+
+.modal-footer .btn {
+    width: 50px;
+    height: 30px;
+}
+
+.modal-footer .btn:first-child {
+    color: gray;
+}
+
+.modal-footer .btn:first-child:hover {
+    background-color: rgb(235, 231, 231);
+    color: dimgray;
+}
+
+.modal-footer .btn:last-child:hover {
+    background-color: rgb(193, 43, 43);
+}
+
+.modal-footer {
+    border: 0;
+    padding-top: 0;
+}
+
+.modal-dialog {
+    width: 90vw;
+    max-width: 400px;
+    margin-top: 35vh;
+    transition-duration: 0.5s;
+}
+
+.modal-body {
+    padding: 10px 30px 10px 45px;
+    font-family: arial;
+    color: dimgray;
+}
+
+.modal-header {
+    border: 0;
+    padding-bottom: 0;
+}
+
+#scoreboard {
+    flex-grow: 1;
+    min-width: 50%;
+    height: 90%;
+    margin-left: 2vw;
+    margin-right: 1vw;
+    justify-content: center;
+}
+
+.board+ div {
+    min-width: 300px;
+    width: 45vw;
+    max-width: 700px;
+    align-items: flex-start;
+}
+
+hr {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    border-top: 1px solid rgba(228, 88, 143, 0.75);
+}
+
+h3 {
+    align-self: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 5vh;
+    margin-left: 3%;
+}
